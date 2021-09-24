@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <div slot="title">
+            <h3> 
+                 Insert Building Information            
+             </h3>
+        </div> 
+        <div class="slds-p-horizontal_small">
+            <lightning-input type="text" label="Name" value={getBuildingRecord.Name} onchange={nameInpChange}></lightning-input>
+            <lightning-input-field field-name="Building__c" label="Building Name" value={getBuildingRecord.Building__c} onchange={nameInpChange}></lightning-input-field>
+            
+        </div>
+
+        <div slot="footer">
+            <lightning-button label="Submit" onclick={saveBuildingAction} variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

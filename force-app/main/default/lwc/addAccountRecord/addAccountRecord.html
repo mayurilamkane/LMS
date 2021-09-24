@@ -1,0 +1,16 @@
+<template>
+<lightning-card>
+    <div slot="title">
+        <h3> 
+             Insert Building Information            
+         </h3>
+    </div> 
+    <div>
+    <lightning-layout-item class="slds-p-horizontal_small">
+        <lightning-button label="Add Building" onclick={createNewBuildingItem}></lightning-button>
+        <lightning-button label="Add Flats"  onclick={createFlatItem}></lightning-button>
+        <lightning-button label="Add Tenants"  onclick={createTenantsItem}></lightning-button>
+    </lightning-layout-item>
+</div>
+</lightning-card>
+</template>
